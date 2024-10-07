@@ -29,7 +29,7 @@ THE SOFTWARE.
 	<parent>
 		<groupId>org.jenkins-ci.plugins</groupId>
 		<artifactId>plugin</artifactId>
-		<version>4.87</version>
+		<version>5.1</version>
 		<relativePath />
 	</parent>
 
@@ -90,10 +90,7 @@ THE SOFTWARE.
 		<revision>1.7.1</revision>
 		<changelist>-SNAPSHOT</changelist>
 		<gitHubRepo>jenkinsci/${project.artifactId}</gitHubRepo>
-		<jenkins.version>2.476</jenkins.version>
-		<!-- TODO JENKINS-73339 until in parent POM -->
-		<jenkins-test-harness.version>2265.v3da_49c8134d6</jenkins-test-harness.version>
-		<maven.compiler.release>17</maven.compiler.release>
+		<jenkins.version>2.479</jenkins.version>
 		<cas-client.version>4.0.4</cas-client.version>
 	</properties>
 
@@ -115,12 +112,6 @@ THE SOFTWARE.
 				<groupId>org.apereo.cas.client</groupId>
 				<artifactId>cas-client-support-saml</artifactId>
 				<version>${cas-client.version}</version>
-			</dependency>
-			<!-- TODO JENKINS-73339 until in parent POM, work around https://github.com/jenkinsci/plugin-pom/issues/936 -->
-			<dependency>
-				<groupId>jakarta.servlet</groupId>
-				<artifactId>jakarta.servlet-api</artifactId>
-				<version>5.0.0</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
